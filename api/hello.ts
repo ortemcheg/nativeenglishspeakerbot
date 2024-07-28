@@ -9,4 +9,4 @@ bot.on("message", async (ctx) => {
   await ctx.reply("Hi there!");
 });
 
-export default webhookCallback(bot, "std/http");
+export default webhookCallback(bot, "https");
