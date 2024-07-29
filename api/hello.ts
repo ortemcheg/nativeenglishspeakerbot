@@ -6,7 +6,7 @@ if (!token) throw new Error("BOT_TOKEN is unset");
 const bot = new Bot(token);
 
 bot.on("message", async (ctx) => {
-  await ctx.reply(`You said ${ctx.message.text}`);
+  await ctx.reply(`${ctx.from.first_name} said "${ctx.message.text}"`);
 });
 
 export default webhookCallback(bot, "https");
