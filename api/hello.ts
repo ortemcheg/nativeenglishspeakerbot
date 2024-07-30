@@ -24,7 +24,6 @@ bot.on("message", async (ctx) => {
   await ctx.reply(
     `${ctx.session.messageCount}. ${ctx.from.first_name} said "${ctx.message.text}"`
   );
-  ctx.session.messageCount++;
 });
 
 export default webhookCallback(bot, "https");
